@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chungku | Computer System and Network Student</title>
+<meta name="description" content="Portfolio of Chungku, a Diploma in Computer System and Network student at Jigme Namgyel Engineering College, Bhutan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand&family=Playfair+Display:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("theme"),s=localStorage.getItem("scale");if(t)document.documentElement.dataset.theme=t;if(s)document.documentElement.style.fontSize=s+"%";}catch(e){}</script>
+</head>
+<body>
+
+<img id="walking-robot" src="images/robot.png" alt="Cute robot following cursor">
+
+<aside class="rail" aria-label="Portfolio slides">
+  <div class="who"><img src="profile.jpg" alt="Portrait of Chungku" width="56" height="56"><strong>Chungku</strong></div>
+  <nav id="rail">
+    <a class="thumb" href="#home"><i>1</i><span>Home</span></a>
+    <a class="thumb" href="#intro"><i>2</i><span>Introduction</span></a>
+    <a class="thumb" href="#education"><i>3</i><span>Education</span></a>
+    <a class="thumb" href="#projects"><i>4</i><span>Projects</span></a>
+    <a class="thumb" href="#tools"><i>5</i><span>Tools used</span></a>
+    <a class="thumb" href="#skills"><i>6</i><span>Skills</span></a>
+    <a class="thumb" href="#certificates"><i>7</i><span>Certificates</span></a>
+    <a class="thumb" href="#contact"><i>8</i><span>Contact</span></a>
+  </nav>
+  <div class="tools" role="group" aria-label="Display settings">
+    <button id="smaller" aria-label="Smaller text">A−</button>
+    <button id="larger" aria-label="Larger text">A+</button>
+    <button id="themeToggle" aria-label="Switch colour theme">Dark</button>
+  </div>
+</aside>
+
+<main>
+  <section class="slide cover" id="home">
+    <div class="cover-grid">
+      <div class="cover-text">
+        <h1 aria-label="Hey! I am Chungku"><span class="hey" aria-hidden="true">HEY! I AM</span> <span class="rn" aria-hidden="true"><span>C</span><span>H</span><span>U</span><span>N</span><span>G</span><span>K</span><span>U</span></span></h1>
+        <p class="intro">I’m a Computer System and Network diploma student at Jigme Namgyel Engineering College in Dewathang, Bhutan. I configure DNS servers, design BGP networks and now build for the web.</p>
+        <p class="tag">I build and troubleshoot networks and servers.</p>
+        <div class="actions"><a class="btn dark" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+      </div>
+      <figure class="polaroid">
+        <span class="clip c1" aria-hidden="true">📎</span><span class="clip c2" aria-hidden="true">📎</span>
+        <img class="avatar" src="profile.jpg" alt="Portrait of Chungku" width="220" height="220">
+        <span class="name-tag"><b>HELLO</b><small>I AM</small><em>Network student</em></span>
+        <span class="smile" aria-hidden="true">☺</span>
+      </figure>
+    </div>
+    <ul class="glance" aria-label="At a glance">
+      <li><strong>Diploma</strong><span>Computer System and Network, JNEC</span></li>
+      <li><strong>3rd semester</strong><span>Royal University of Bhutan</span></li>
+      <li><strong>3 projects</strong><span>BGP, DNS and web</span></li>
+      <li><strong>5 certificates</strong><span>Cisco, Packt, EDUCBA, Board Infinity</span></li>
+    </ul>
+    <div class="toc">
+      <h2>Table of contents</h2>
+      <ol><li><a href="#projects"><i>1</i>Projects</a></li><li><a href="#tools"><i>2</i>Tools used</a></li><li><a href="#skills"><i>3</i>Skills</a></li><li><a href="#certificates"><i>4</i>Certificates</a></li></ol>
+    </div>
+  </section>
+
+  <section class="slide" id="intro">
+    <h2>Introduction</h2>
+    <div class="cols">
+      <p>I’m Chungku, a third-semester student of the Diploma in Computer System and Network at Jigme Namgyel Engineering College, under the Royal University of Bhutan. I enjoy seeing how data actually travels between machines, from a client asking a DNS server for an address to routers exchanging routes with BGP.</p>
+      <div>
+        <p><strong>Interests:</strong> network design, server administration, virtual labs, web development.</p>
+        <p><strong>Career goal:</strong> to work as a network or systems engineer in Bhutan, helping organisations stay connected and secure, and to keep learning toward professional certifications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="education">
+    <h2>Education</h2>
+    <div class="sticky"><ol class="timeline">
+      <li><h3>Diploma in Computer System and Network</h3><p>Jigme Namgyel Engineering College, Dewathang, Royal University of Bhutan. Currently in the 3rd semester.</p></li>
+      <li><h3>High school education</h3><p>Pelkhil School, Thimphu, Bhutan.</p></li>
+    </ol></div>
+  </section>
+
+  <section class="slide" id="projects">
+    <h2>Projects</h2>
+    <article class="card wide">
+  <h3>BGP Network for BETN</h3>
+  <p>A model of the Bhutan Education and Training Network. The THIMPHU router (AS 65001), the ISP router (AS 65100) and the PARO router (AS 65002) exchange routes with eBGP, and ACLs control which traffic is allowed.</p>
+  <ul class="chips"><li>Packet Tracer</li><li>eBGP</li><li>ACL</li></ul>
+  
+  <!-- THIS IS THE MAGIC PART -->
+  <details class="diagram-dropdown">
+    <summary class="note">🔍 Click the diagram to enlarge it.</summary>
+    <a class="shot" href="images/bgp-topology.png" target="_blank" rel="noopener">
+      <img src="images/bgp-topology.png" alt="Packet Tracer topology of the BETN BGP network: THIMPHU router in AS 65001, ISP router in AS 65100 and PARO router in AS 65002">
+    </a>
+  </details>
+
+  <p class="note">Report and viva completed for the networking course.</p>
+</article>
+    <div class="grid">
+      <article class="card"><h3>DNS Server Configuration</h3><p>A lab for the Directory Services course. I set up a DNS server on Windows Server 2022, created forward lookup records and joined a Windows 10 client to test name resolution.</p><ul class="chips"><li>Windows Server 2022</li><li>Windows 10</li><li>GNS3</li><li>VirtualBox</li></ul><p class="note">Lab report submitted to Sir Tashi Tobgay, 2026.</p></article>
+      <article class="card"><h3>This portfolio website</h3><p>A responsive site with a slide-style menu, adjustable text size, a theme toggle and a contact form, hosted on GitHub Pages.</p><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul><p class="links"><a href="https://github.com/REPLACE_GITHUB/portfolio" target="_blank" rel="noopener">View the repository</a></p></article>
+    </div>
+  </section>
+
+  <section class="slide" id="tools">
+    <h2>Tools used</h2>
+    <ul class="toolgrid">
+      <li class="tool"><b>PT</b><span>Packet Tracer</span></li>
+      <li class="tool"><b>GN</b><span>GNS3</span></li>
+      <li class="tool"><b>VB</b><span>VirtualBox</span></li>
+      <li class="tool"><b>WS</b><span>Windows Server</span></li>
+      <li class="tool"><b>Lx</b><span>Linux</span></li>
+      <li class="tool"><b>Py</b><span>Python</span></li>
+      <li class="tool"><b>Gi</b><span>Git and GitHub</span></li>
+      <li class="tool"><b>VS</b><span>VS Code</span></li>
+    </ul>
+  </section>
+
+  <section class="slide" id="skills">
+    <h2>Skills</h2>
+    <span class="sticker" aria-hidden="true">KEEP<br>LEARNING</span>
+    <p class="center">I bring a solid base in networking and server administration, with growing skills in programming and web development. I document my labs carefully and enjoy explaining how they work.</p>
+    <div class="rings">
+      <div class="ringbox"><div class="ring" data-p="85" role="img" aria-label="85 percent"><b>0%</b></div><p>Networking<br><small>routing, BGP, ACLs</small></p></div>
+      <div class="ringbox"><div class="ring" data-p="80" role="img" aria-label="80 percent"><b>0%</b></div><p>Server administration<br><small>Windows and Linux</small></p></div>
+      <div class="ringbox"><div class="ring" data-p="70" role="img" aria-label="70 percent"><b>0%</b></div><p>Web development<br><small>HTML, CSS, JavaScript</small></p></div>
+    </div>
+    <p class="note center">Self-rated confidence, based on my coursework and labs so far.</p>
+  </section>
+
+  <section class="slide" id="certificates">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <article class="card"><h3>CCNA: Introduction to Networks</h3><p>Cisco Networking Academy, through Jigme Namgyel Engineering College.</p><p class="note">Completed 27 Jul 2026</p><p class="links"><a href="certificates/ccna-introduction-to-networks.pdf" target="_blank" rel="noopener">View certificate</a></p></article>
+      <article class="card"><h3>CCNA: Switching, Routing, and Wireless Essentials</h3><p>Cisco Networking Academy, through Jigme Namgyel Engineering College.</p><p class="note">Completed 27 Jul 2026</p><p class="links"><a href="certificates/ccna-switching-routing-wireless.pdf" target="_blank" rel="noopener">View certificate</a></p></article>
+      <article class="card"><h3>Becoming a Linux Server Admin</h3><p>Packt, through Coursera.</p><p class="note">Completed 25 Sep 2026</p><p class="links"><a href="certificates/linux-server-admin.pdf" target="_blank" rel="noopener">View certificate</a> <a href="https://coursera.org/verify/OUGUCXQRINM8" target="_blank" rel="noopener">Verify on Coursera</a></p></article>
+      <article class="card"><h3>Python Tkinter: Design, Build &amp; Integrate GUIs</h3><p>EDUCBA, through Coursera.</p><p class="note">Completed 21 Sep 2026</p><p class="links"><a href="certificates/python-tkinter-guis.pdf" target="_blank" rel="noopener">View certificate</a> <a href="https://coursera.org/verify/6TCJ1QIZANH7" target="_blank" rel="noopener">Verify on Coursera</a></p></article>
+      <article class="card"><h3>Master Full-Stack Web Development with Laravel &amp; PHP</h3><p>Board Infinity, through Coursera.</p><p class="note">Completed 19 Sep 2026</p><p class="links"><a href="certificates/laravel-php-full-stack.pdf" target="_blank" rel="noopener">View certificate</a> <a href="https://coursera.org/verify/G39Z896CYP4Y" target="_blank" rel="noopener">Verify on Coursera</a></p></article>
+    </div>
+  </section>
+
+  <section class="slide" id="contact">
+    <h2>Let’s work together</h2>
+    <div class="cols">
+      <div>
+        <p>Thank you for taking the time to view my portfolio. I’m always looking for opportunities to learn and keep growing. Send a message and your email app will open with it ready to send.</p>
+        <p><a class="big-link" href="mailto:c.chungku07@gmail.com">c.chungku07@gmail.com</a></p>
+        <p><a class="big-link" href="https://github.com/https://github.com/05250168jnec-pixel" target="_blank" rel="noopener">github.com/github.com/05250168jnec-pixel</a></p>
+      </div>
+      <div class="card">
+        <label for="cName">Your name</label><input id="cName" autocomplete="name">
+        <label for="cEmail">Your email</label><input id="cEmail" type="email" autocomplete="email">
+        <label for="cMsg">Message</label><textarea id="cMsg" rows="4"></textarea>
+        <p class="error" id="formMsg" role="alert"></p>
+        <button class="btn dark" id="sendBtn" type="button">Send message</button>
+      </div>
+    </div>
+  </section>
+  <footer><p>© <span id="year"></span> Chungku. Built with HTML, CSS and JavaScript.</p></footer>
+</main>
+<audio id="bgMusic" loop preload="none">
+  <source src="music/Spring-Flowers.mp3" type="audio/mpeg">
+</audio>
+<button id="musicBtn" type="button" aria-label="Play background music" aria-pressed="false">🔊 Music</button>
+<script src="script.js"></script>
+</body>
+</html>
